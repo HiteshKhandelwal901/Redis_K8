@@ -1,0 +1,19 @@
+apiVersion : v1
+
+kind : Pod
+
+metadata :
+
+  name : redis-pod
+
+spec :
+
+  containers :
+  - name : reddis-container
+    
+    image : hiteshkhandelwal/reddis_k8
+
+    ports : 
+    - containerPort : 9696
+
+
